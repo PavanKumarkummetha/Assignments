@@ -1,0 +1,15 @@
+import java.util.*;
+class swap{
+    
+    
+    public static ArrayList swap(int a,int b){
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        ArrayList ar=new ArrayList();
+        ar.add(a);
+        ar.add(b);
+        return ar;
+        
+    }
+}
