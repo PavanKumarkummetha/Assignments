@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class Armstrong {
+    public static String Armstrong(){
+        System.out.println("please enter the number");
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int y=n;
+        int sum=0;
+        while(y>0){
+            int t=y%10;
+            sum+=t*t*t;
+            y=y/10;
+        }
+        if(sum==n){
+            return "YES";
+        }
+        
+        else{
+            return "NO";
+        }
+        }
+        
+        
+        public static void main(String[]args){
+            System.out.println(Armstrong());
+        }
+        
+        
+    }
