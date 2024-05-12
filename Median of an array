@@ -1,0 +1,25 @@
+import java.util.Arrays;
+class Median{
+       // Finding the median of an Array
+        public static int median(int [] array){
+            int median =0;
+            Arrays.sort(array);
+            int n=array.length;
+     
+            if(n%2==0){
+                median=array[n/2];
+            }
+            
+            else{
+                median=array[n/2+1];
+            }
+            return median;
+        }
+        
+        
+        public static void main(String[]args){
+            int []Array={100,78,89,6};
+            System.out.println(median(Array));
+            
+        }
+}
