@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class Sumofseries{
+      static Scanner sc=new Scanner(System.in);
+
+// Main method 
+public static void main(String[]args){
+       Long result= SumOfSeries();
+System.out.println(result);
+}
+
+
+
+// Method for calculating Sumod series
+public static Long SumOfSeries(){
+Long sum=0L;
+
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the number");
+Long n=sc.nextLong();
+sum=(Long)(n*n+1)/2;
+return sum;
+}
+}
